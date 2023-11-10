@@ -1,4 +1,4 @@
 export const PORT = 5555;
 
 export const mongoDBURL =
-  'mongodb://0.0.0.0:27017/first';
+  'mongodb+srv://admin:admin@chancluster.qrpx1av.mongodb.net/newdata';
