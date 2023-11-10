@@ -21,7 +21,12 @@ app.get('/', (request, response) => {
 app.use('/books', booksRoute);
 
 mongoose
-  .connect('mongodb+srv://admin:admin@chancluster.qrpx1av.mongodb.net/newdata')
+  .connect('mongodb+srv://admin:admin@chancluster.qrpx1av.mongodb.net/newdata',
+  
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log('App connected to database');
     app.listen(5555, () => {
