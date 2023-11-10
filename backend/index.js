@@ -21,7 +21,7 @@ app.get('/', (request, response) => {
 app.use('/books', booksRoute);
 
 mongoose
-  .connect('mongodb+srv://admin:admin@chancluster.qrpx1av.mongodb.net/newdata',
+  .connect('',
   
   {
     useNewUrlParser: true,
