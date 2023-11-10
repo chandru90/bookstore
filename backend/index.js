@@ -21,11 +21,11 @@ app.get('/', (request, response) => {
 app.use('/books', booksRoute);
 
 mongoose
-  .connect(mongoDBURL)
+  .connect('mongodb+srv://admin:admin@chancluster.qrpx1av.mongodb.net/newdata')
   .then(() => {
     console.log('App connected to database');
-    app.listen(PORT, () => {
-      console.log(`App is listening to port: ${PORT}`);
+    app.listen(5555, () => {
+      console.log(`App is listening to port`);
     });
   })
   .catch((error) => {
