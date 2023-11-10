@@ -9,11 +9,11 @@ import DeleteBook from './pages/DeleteBook';
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/books/create' element={<CreateBook />} />
-      <Route path='/books/details/:id' element={<ShowBook />} />
-      <Route path='/books/edit/:id' element={<EditBook />} />
-      <Route path='/books/delete/:id' element={<DeleteBook />} />
+      <Route path='https://chandru-bookstore.onrender.com/' element={<Home />} />
+      <Route path='https://chandru-bookstore.onrender.com/books/create' element={<CreateBook />} />
+      <Route path='https://chandru-bookstore.onrender.com/books/details/:id' element={<ShowBook />} />
+      <Route path='https://chandru-bookstore.onrender.com/books/edit/:id' element={<EditBook />} />
+      <Route path='https://chandru-bookstore.onrender.com/books/delete/:id' element={<DeleteBook />} />
     </Routes>
   );
 };
